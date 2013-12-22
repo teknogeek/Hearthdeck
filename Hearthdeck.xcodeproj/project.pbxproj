@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3501F04B18665610003D114B /* DeckListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3501F04A18665610003D114B /* DeckListViewController.m */; };
+		3501F04E18665693003D114B /* Deck.m in Sources */ = {isa = PBXBuildFile; fileRef = 3501F04D18665693003D114B /* Deck.m */; };
+		3501F05118665B15003D114B /* AddDeckViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3501F05018665B15003D114B /* AddDeckViewController.m */; };
 		356E92E618664C7500A1E4E9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 356E92E518664C7500A1E4E9 /* Foundation.framework */; };
 		356E92E818664C7500A1E4E9 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 356E92E718664C7500A1E4E9 /* CoreGraphics.framework */; };
 		356E92EA18664C7500A1E4E9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 356E92E918664C7500A1E4E9 /* UIKit.framework */; };
@@ -34,6 +37,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3501F04918665610003D114B /* DeckListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeckListViewController.h; sourceTree = "<group>"; };
+		3501F04A18665610003D114B /* DeckListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeckListViewController.m; sourceTree = "<group>"; };
+		3501F04C18665693003D114B /* Deck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Deck.h; sourceTree = "<group>"; };
+		3501F04D18665693003D114B /* Deck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Deck.m; sourceTree = "<group>"; };
+		3501F04F18665B15003D114B /* AddDeckViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddDeckViewController.h; sourceTree = "<group>"; };
+		3501F05018665B15003D114B /* AddDeckViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddDeckViewController.m; sourceTree = "<group>"; };
 		356E92E218664C7500A1E4E9 /* Hearthdeck.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hearthdeck.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		356E92E518664C7500A1E4E9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		356E92E718664C7500A1E4E9 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -114,6 +123,12 @@
 			children = (
 				356E92F418664C7500A1E4E9 /* AppDelegate.h */,
 				356E92F518664C7500A1E4E9 /* AppDelegate.m */,
+				3501F04918665610003D114B /* DeckListViewController.h */,
+				3501F04A18665610003D114B /* DeckListViewController.m */,
+				3501F04F18665B15003D114B /* AddDeckViewController.h */,
+				3501F05018665B15003D114B /* AddDeckViewController.m */,
+				3501F04C18665693003D114B /* Deck.h */,
+				3501F04D18665693003D114B /* Deck.m */,
 				356E92F718664C7500A1E4E9 /* Main.storyboard */,
 				356E92FA18664C7500A1E4E9 /* ViewController.h */,
 				356E92FB18664C7500A1E4E9 /* ViewController.m */,
@@ -249,8 +264,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3501F04E18665693003D114B /* Deck.m in Sources */,
+				3501F05118665B15003D114B /* AddDeckViewController.m in Sources */,
 				356E92FC18664C7500A1E4E9 /* ViewController.m in Sources */,
 				356E92F618664C7500A1E4E9 /* AppDelegate.m in Sources */,
+				3501F04B18665610003D114B /* DeckListViewController.m in Sources */,
 				356E92F218664C7500A1E4E9 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -381,6 +399,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Hearthdeck/Hearthdeck-Prefix.pch";
 				INFOPLIST_FILE = "Hearthdeck/Hearthdeck-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -394,6 +413,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Hearthdeck/Hearthdeck-Prefix.pch";
 				INFOPLIST_FILE = "Hearthdeck/Hearthdeck-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -460,6 +480,7 @@
 				356E931618664C7600A1E4E9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		356E931718664C7600A1E4E9 /* Build configuration list for PBXNativeTarget "HearthdeckTests" */ = {
 			isa = XCConfigurationList;
@@ -468,6 +489,7 @@
 				356E931918664C7600A1E4E9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
